@@ -1,0 +1,30 @@
+PERSONAJES
+  - id
+  - Nombre
+  - Nivel
+  - PuntosVida
+  - idArma
+
+ARMAS
+  - id
+  - Nombre
+  - PuntoDaño
+
+HECHIZOS
+  - id
+  - Nombre
+  - PuntoDaño
+
+Caso 1 (uno a muchos):
+  1 personaje tiene solo 1 arma
+  1 arma puede ser tenida por varios Pjs
+
+PJS <------> ARS
+    N      1
+
+Caso 2 (muchos a muchos):
+  1 personaje conoce varios hechizos
+  1 hechizo es conocido por varios Pjs
+
+PJS <------> HES
+    N      N

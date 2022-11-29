@@ -1,0 +1,36 @@
+---------------------------
+BASES DE DATOS RELACIONALES
+---------------------------
+
+Fundamentos
+  Entidades (con sus atributos)
+  Relaciones (con su cardinalidad)
+  Unicidad (evitar redundancia, entre otras)
+  Integridad referencial (UPDATE, DELETE)
+
+Tecnologías
+  Lenguaje: ANSI SQL (Structured Query Language)
+  SGBD (DBMS):
+    - MySQL/MariaDB (3306)
+    - Oracle
+    - PosgreSQL
+    - SQLite
+    - SQL Server
+
+0) Instalación y entorno de trabajo
+  - Server (SGBD)
+  - Client (MySQLWorkbench, mysql (npm), etc.)
+
+1) Operaciones
+
+  1.a) Data Definition Language:
+    - CREATE DATABASE
+    - CREATE TABLE
+    - ALTER TABLE
+    - DROP TABLE
+
+  1.b) Data Manipulation Language (CRUD):
+    - INSERT
+    - SELECT
+    - UPDATE
+    - DELETE
