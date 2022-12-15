@@ -83,7 +83,6 @@ function App() {
         <h2>{totalMovies}</h2>
 
         <h2>Categorías</h2>
-
         {
           categories.map((cat) => {
             return (

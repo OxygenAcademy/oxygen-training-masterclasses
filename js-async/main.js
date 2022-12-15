@@ -1,7 +1,9 @@
+// Fetch GET Example
+
 document
   .querySelector("#btn")
   .addEventListener("click", () => {
-    fetch("https://futuramaapi.herokuapp.com/api/quotes")
+    fetch("https://pokeapi.co/api/v2/ability/1")
       .then(response => response.json())
       .then(data => {
         data.map(quote => {
@@ -12,6 +14,8 @@ document
   });
 
 /*
+// Fetch POST Example
+
 document
   .querySelector("#submit")
   .addEventListener("click", () => {
@@ -50,13 +54,17 @@ myPromise
 
 // Modern async/await Version
 const getQuotes = async () => {
-
-  const response = await fetch("https://futuramaapi.herokuapp.com/api/quotes");
-  const data = await response.json();
-
-  data.map(quote => {
-    document.querySelector("#quotes").innerHTML += quote.character + " dijo: " + quote.quote + "<br />"
-  })
+  try {
+    const response = await fetch("https://futuramaapi.herokuapp.com/api/quotes");
+    const data = await response.json();
+  
+    data.map(quote => {
+      document.querySelector("#quotes").innerHTML += quote.character + " dijo: " + quote.quote + "<br />"
+    })
+  }
+  catch (error) {
+    console.log(`El servidor se ha caído: ${error}`)
+  }
 }
 
 //getQuotes();
