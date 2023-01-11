@@ -34,8 +34,8 @@ class Meara extends Horse {
 }
 
 const myHorse = new Horse("Babieca", "Marrón", 9);
-const myHorse2 = new Horse( "Rocinante", "Gris", 27 );
-const myHorse3 = new Meara( "Sombragrís", "Blanco", 500, 35 );
+const myHorse2 = new Horse("Rocinante", "Gris", 27);
+const myHorse3 = new Meara("Sombragrís", "Blanco", 500, 35);
 
 console.log(myHorse3.light);
 console.log(myHorse3.name);

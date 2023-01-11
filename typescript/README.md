@@ -12,8 +12,9 @@
   - Casting
   - Clases
   - Genéricos
-  - Utilidades
+  - Tipos de utilidades
   - keyof, null y undefined
+  - Definiciones de tipos de la comunidad (npm)
 
 ## Referencias
 
