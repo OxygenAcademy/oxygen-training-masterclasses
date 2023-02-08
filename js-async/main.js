@@ -20,8 +20,8 @@ document
     fetch("https://mybackend.com/login", {
       method: 'POST',
       body: JSON.stringify({
-        user: ...,
-        pass: ...
+        user: document.getElementById("user").value,
+        pass: document.getElementById("pass").value
       }),
       headers: {
         'Content-Type': 'application/json'
