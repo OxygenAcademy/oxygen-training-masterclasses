@@ -18,6 +18,7 @@
 
 ## Referencias
 
-https://www.typescriptlang.org/es/  
-https://codigofacilito.com/articulos/typescript  
-https://www.w3schools.com/typescript/index.php  
+[Documentación oficial TypeScript](https://www.typescriptlang.org/es/)  
+[Introducción a TypeScript](https://codigofacilito.com/articulos/typescript)  
+[TypeScript (w3schools)](https://www.w3schools.com/typescript/index.php)  
+[TypeScript express](https://www.typescript.express/)
