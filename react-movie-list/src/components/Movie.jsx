@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import { useState } from "react"
  
 const Movie = ({title, year}) => {
   const [titleMovie, setTitleMovie] = useState(title)
@@ -7,12 +7,12 @@ const Movie = ({title, year}) => {
 
   return (
     <div>
-      <h1>Título: {titleMovie}</h1>
-      <h1>Año: {year}</h1>
-
-      <input type="text" value={titleMovie} onChange={(e) => changeTitle(e)} />
-
-      <h2>{user.name}</h2>
+      <h3>{title}</h3>
+      <p>Año: {year}</p>
+      
+      <div>
+        <input type="text" value={titleMovie} onChange={e => changeTitle(e)} />
+      </div>
     </div>
   )
 }
