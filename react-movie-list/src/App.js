@@ -1,6 +1,6 @@
-import './App.css';
-import Movie from "./components/Movie";
-import { useState, useEffect } from 'react';
+import "./App.css"
+import Movie from "./components/Movie"
+import { useState, useEffect } from "react"
 
 const data = [
   {
@@ -14,29 +14,29 @@ const data = [
 ]
 
 const App = () => {
-  const [title, setTitle] = useState("Mi super aplicación");
-  const [user, setUser] = useState({});
-  const [movies, setMovies] = useState([]);
-  const [totalMovies, setTotalMovies] = useState(0);
+  const [title, setTitle] = useState("Mi super aplicación")
+  const [user, setUser] = useState({})
+  const [movies, setMovies] = useState([])
+  const [totalMovies, setTotalMovies] = useState(0)
 
   // Mounting
   useEffect(() => {
     setUser({
       name: "Goku",
       level: 9000
-    });
+    })
 
     let timer = setTimeout(() => {
-      setMovies(data);
-    }, 2000);
+      setMovies(data)
+    }, 2000)
 
     // Cleanup action
     return () => clearTimeout(timer)
-  }, []);
+  }, [])
 
   useEffect(() => {
     setTotalMovies(movies.length)
-  }, [movies]);
+  }, [movies])
 
   return (
     <div className="App">
@@ -61,7 +61,7 @@ const App = () => {
       
       <p>Total: {totalMovies}</p>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
