@@ -15,6 +15,7 @@
   - Tipos de utilidades
   - keyof, null y undefined
   - Definiciones de tipos de la comunidad (npm)
+- Uso con React
 
 ## Referencias
 
@@ -22,3 +23,6 @@
 [Introducción a TypeScript](https://codigofacilito.com/articulos/typescript)  
 [TypeScript (w3schools)](https://www.w3schools.com/typescript/index.php)  
 [TypeScript express](https://www.typescript.express/)
+
+[How use TS with React](https://blog.logrocket.com/how-use-typescript-react-tutorial-examples/)  
+[With CRA template](https://create-react-app.dev/docs/getting-started#creating-a-typescript-app)
